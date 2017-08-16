@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Concept//EN" "topic.dtd">
+<topic id="topic_cloud_intro">
+ 
+ <title>
+  Amazon Web Services
+ </title>
+ 
+ <shortdesc>
+  You can deploy Couchbase Server to <i>Amazon Web Services</i> (AWS).
+ </shortdesc>
+ 
+ <body>
+  
+  <section id="amazon_web_services">
+   
+   <title>
+    Accessing Amazon Web Services
+   </title>
+   
+   <p>
+    To access Amazon Web Services (AWS) you need an AWS account. For information on how to do so, see the
+    AWS documentation for
+    <xref href="http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/AboutAWSAccounts.html" scope="external" format="html">Creating
+    an AWS Account</xref>.
+   </p>
+   
+   
+  </section>
+  
+  <section id="preparing_for_deployment_on_aws">
+   
+   <title>
+    Preparing for Deployment on AWS
+   </title>
+   
+   <p>
+    Before deploying Couchbase Server-instances, you must prepare your AWS environment. Proceed as follows:
+   </p>
+   
+   <ol>
+    <li>
+     Access the AWS Console,
+     <xref href="https://aws.amazon.com/console/" scope="external" format="html">here</xref>, and sign in.
+     
+     <p>
+      
+     </p>
+    </li>
+    
+    <li>
+     When the console appears, select the <i>EC2</i> option, near the upper-left of the main panel:
+     
+     <p>
+      <image href="./picts/accessEC2.png" id="access_ec2" align="left" width="720"/>
+     </p>
+     
+     <p>
+      
+     </p>
+     
+    </li>
+    
+    <li>
+     When the Resources page for your account appears, left-click on the <uicontrol>Launch Instance</uicontrol> button, in the
+     <b>Create Instance</b> section, in the middle of the screen:
+     
+     <p>
+      <image href="./picts/launchInstance.png" id="launch_instance" align="left" width="720"/>
+     </p>
+     
+    </li>
+    
+    <li>
+     When the <b>Choose an Amazon Machine Image (AMI)</b> page appears, select Red Hat Enterprise Linux:
+     
+     <p>
+      <image href="./picts/chooseRHEL.png" id="choose_rhel" align="left" width="720"/>
+     </p>
+    </li>
+    
+    <li>
+     When the <b>Choose an Instance Type</b> page appears, select <uicontrol>m4.large</uicontrol>:
+     
+     <p>
+      <image href="./picts/selectM4large.png" id="select_m4large" align="left" width="520"/>
+     </p>
+     
+     <p>
+      Then, left-click on <uicontrol>Review and Launch</uicontrol>:
+     </p>
+     
+     <p>
+      <image href="./picts/clickReviewAndLaunch.png" id="click_review_and_launch" align="left" width="270"/>
+     </p>
+     
+     <p>
+      The <b>Review Instance Launch</b> page should now appear, confirming that your instance has been launched.
+     </p>
+    </li>
+    
+    <li>
+     Left-click on the <uicontrol>Launch</uicontrol> button, at the lower-right:
+     
+     <p>
+      <image href="./picts/clickLaunch.png" id="click_launch" align="left" width="270"/>
+     </p>
+     
+     <p>
+      The <uicontrol>Select an existing key pair or create a new key pair</uicontrol> dialog now appears:
+     </p>
+     
+     <p>
+      <image href="./picts/createKeyPairDialog.png" id="create_key_pair_dialog" align="left" width="579"/>
+     </p>
+     
+     <p>
+      You must use
+      this to specify or create a pair keys (one public, for AWS; the other private, for yourself), which you will
+      use to access AWS security.
+     </p>
+     
+    </li>
+    
+    <li>
+     <p>
+      If you have already created a key pair, for AWS-access, use the dialog-interface to specify that pair. If you
+      have not done so, use the interface as follows.
+     </p>
+     
+     <p>
+      From the upper field, select <uicontrol>Create a new key pair</uicontrol>. The lower field is now an interactive
+      text-field, which can take input from your keyboard and mouse.
+     </p>
+     
+     <p>
+      In the lower field specify a name for your key pair. Note that this must be unique across AWS.
+     </p>
+     
+     <p>
+      Next, left-click on the <uicontrol>Download Key Pair</uicontrol> button, at the lower-right. The key pair is
+      now downloaded, as a <uicontrol>.pem</uicontrol> file. You will reference this file when accessing AWS from the
+      console, on your local machine. 
+     </p>
+     
+     <p>
+      Finally, left-click on the <uicontrol>Launch Instances</uicontrol> button at the lower-right. Your instance is
+      now launched. The <b>Launch Status</b> page appears, providing a reference to your launched instance:
+     </p>
+     
+     <p>
+      <image href="./picts/refToLaunchedInstance.png" id="ref_to_launched_instance" align="left" width="579"/>
+     </p>
+     
+     <p>
+      Left-click on this reference. Your console now appears, featuring details of the running instance:
+     </p>
+     
+     <p>
+      <image href="./picts/consoleDescribingRunningInstance.png" id="console_describing_running_instance" align="left" width="780"/>
+     </p>
+     
+    </li>
+    
+   </ol>
+   
+   <p>
+    This conclude deployment-preparations.
+   </p>
+   
+  </section>
+  
+  <section>
+   
+   <title>
+   Deploying on AWS
+   </title>
+  
+   <p>
+    When deployment-preparations have been completed, bring up a terminal on your local, host machine. Then, proceed
+    as follows:
+   </p>
+   
+  </section>
+
+ </body>
+</topic>

@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<concept id="concept_ytn_l3g_ps">
- <title>Couchbase in the cloud</title>
- <shortdesc></shortdesc>
- <conbody>
-  <p></p>
- </conbody>
-</concept>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Concept//EN" "topic.dtd">
+<topic id="topic_cloud_intro">
+ 
+ <title>
+  Cloud Deployments
+ </title>
+ 
+ <shortdesc>
+  You can deploy Couchbase Server in the cloud.
+ </shortdesc>
+ 
+ <body>
+  
+  <section id="available_cloud_environments">
+   
+   <title>
+    Available Cloud Environments
+   </title>
+   
+   <p>
+    Couchbase Server-clusters can be installed, configured, and run in the following commercially available cloud environments:
+   </p>
+   
+   <ul>
+    <li>
+     <i>Amazon Web Services</i>: A cloud solution providing products and services that can be used as building-blocks, in
+     support of scalable applications.
+     
+     <p>
+     </p>
+     
+    </li>
+    
+    <li>
+     <i>Microsoft Azure</i>: A collection of integrated cloud services, supporting the development and management of
+     applications.
+     
+     <p>
+     </p>
+     
+    </li>
+    
+    <li>
+     <i>Google Cloud Platform</i>: Cloud-available resources for compute, storage, networking, database and data
+     warehousing, machine learning, development, and more.
+    </li>
+    
+   </ul>
+    
+    <p>
+     The following sections explain how to deployment Couchbase Server-clusters in each of these cloud environments.
+    </p>
+   
+  </section>
+
+ </body>
+</topic>

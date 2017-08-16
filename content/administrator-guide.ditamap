@@ -42,6 +42,11 @@
 		<topicref href="xdcr/xdcr-timestamp-based-conflict-resolution.dita"/>
 	</topicref>
 	<mapref href="security/security.ditamap" format="ditamap"/>
+	<topicref href="cloud/cloud-intro.dita">
+		<topicref href="cloud/aws.dita"/>
+		<topicref href="cloud/ms.dita"/>
+		<topicref href="cloud/google.dita"/>
+	</topicref>
 	<topichead navtitle="Monitoring and Troubleshooting">
 		<topicref href="monitoring/monitor-intro.dita">
 			<topicref href="monitoring/monitoring-rest.dita"/>
@@ -51,6 +56,7 @@
 			<topicref href="monitoring/monitoring-stats-configuration.dita"/>
 			<topicref href="monitoring/monitoring-n1ql-query.dita"/>
 		</topicref>
+
 		<topicref href="troubleshooting/troubleshooting-intro.dita">
 			<topicref href="troubleshooting/troubleshooting-general-tips.dita"/>
 			<topicref href="clustersetup/ui-logs.dita"/>

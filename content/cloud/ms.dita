@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Concept//EN" "topic.dtd">
+<topic id="topic_cloud_intro">
+ 
+ <title>
+  Microsoft Azure
+ </title>
+ 
+ <shortdesc>
+  You can deploy Couchbase Server to Microsoft Azure.
+ </shortdesc>
+ 
+ <body>
+  
+  <section id="accessing_microsoft_azure">
+   
+   <title>
+    Accessing Microsoft Azure
+   </title>
+   
+   
+  </section>
+
+ </body>
+</topic>

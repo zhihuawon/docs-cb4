@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Concept//EN" "topic.dtd">
+<topic id="topic_cloud_intro">
+ 
+ <title>
+  Google Cloud Platform
+ </title>
+ 
+ <shortdesc>
+  You can deploy Couchbase Server to the Google Cloud Platform.
+ </shortdesc>
+ 
+ <body>
+  
+  <section id="google_cloud_platform">
+   
+   <title>
+    Accesing the Google Cloud Platform
+   </title>
+   
+   
+  </section>
+
+ </body>
+</topic>
