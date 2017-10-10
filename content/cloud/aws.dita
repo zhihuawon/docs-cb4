@@ -175,11 +175,63 @@
    <title>
    Deploying on AWS
    </title>
+   
+   <p>
+    The following instructions allow you to deploy Couchbase Server on AWS, using either Ubuntu or MacOS.
+   </p>
   
    <p>
     When deployment-preparations have been completed, bring up a terminal on your local, host machine. Then, proceed
-    as follows:
+    as follows, using the <codeph>sudo</codeph> command where necesary:
    </p>
+   
+   <ol>
+    <li>
+     Access the folder containing your downloaded keys. Change permissions on them, as follows:
+     
+     <codeblock outputclass="bash">chmod 400 <i>pathname</i>/my-key-pair.pem</codeblock>
+    </li>
+    
+    <li>
+     Access your instance of AWS securely, on your own redirected <codeph>localhost:8091</codeph> port,
+     referencing the key-pair file and the IP address already obtained:
+     
+     <codeblock outputclass="bash">ssh -i <i>pathname</i>/my-key-pair.pem ec2-user@52.37.140.147 -L 8091:localhost:8091</codeblock>
+     
+     <p>
+      If an <codeph>Authenticity can't be established</codeph> notification is displayed, type <codeph>yes</codeph> to continue.
+     </p>
+    </li>
+    
+    <li>
+     Obtain the Couchbase Server-install script, as follows:
+     
+     <codeblock outputclass="bash">curl https://raw.githubusercontent.com/aws-quickstart/quickstart-couchbase/develop/scripts/installServer.sh > installServer.sh</codeblock>
+    </li>
+    
+    <li>
+     Ensure that the downloaded <codeph>installServer.sh</codeph> script is executable:
+     
+     <codeblock outputclass="bash">chmod u+x ./installServer.sh</codeblock>
+    </li>
+    
+    <li>
+     Run the <codeph>installServer.sh</codeph> script:
+     
+     <codeblock outputclass="bash">./installServer.sh</codeblock>
+    </li>
+    
+   <li>
+    In a browser, access the AWS server on your redirected local port, <codeph>localhost:8091</codeph>.
+   </li>
+    
+    <li>
+     Initialize Couchbase Server. See the instructions provided in
+     <xref href="../install/init-setup.dita" scope="local" format="dita">Initialize the Cluster</xref>.
+    </li>
+    
+    
+   </ol>
    
   </section>
 
